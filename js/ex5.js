@@ -11,7 +11,7 @@ function wordchecker() {
     var y = x === null ? 0 : x.length;
     var len = Math.floor(lowerword.length / 2);
     for (var i = 0; i < len; i++) {
-        if (word[i] !== str[str.length - i - 1]) {
+        if (word[i] !== lowerword[lowerword.length - i - 1]) {
             return console.log (word + "contains " + y + " vowels and is not a palindrome");
         } else {
             return console.log (word + "contains " + y + " vowels and is a palindrome");
