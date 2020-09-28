@@ -9,13 +9,13 @@ var math = prompt("Enter Mathematical Operation")
 
 function solve(number1, number2, math) {
     if (math == "+") {
-        return (number1 + number2);
+        return (number1 += number2);
     } else if (math == "-") {
-        return (number1 - number2);
+        return (number1 -= number2);
     } else if (math == "*") {
-        return (number1 * number2);
+        return (number1 *= number2);
     } else if (math == "/") {
-        return (number1 / number2);
+        return (number1 /= number2);
     }
 }
 
