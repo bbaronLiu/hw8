@@ -5,10 +5,10 @@ console.log("Baron's Output from Tutorial 4 Example 6");
 
 function guesser() {
     var x = Math.floor(Math.random() * 100) + 1
-    var y = prompt("Enter a number: ");
     var z = 0;
     var counter = 0;
     while (z == 0) {
+        var y = prompt("Enter a number: ");
         if (y < x) {
             console.log("Too low, guess again");
             counter = counter + 1;
