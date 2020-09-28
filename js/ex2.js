@@ -1,7 +1,7 @@
 /* Tutorial 4
 Example 2 JavaScript code
 */
-console.log("Asher's Output from Tutorial 4 Example 2");
+console.log("Baron's Output from Tutorial 4 Example 2");
 
 const r = Number(prompt("Enter the circle radius:"));
 

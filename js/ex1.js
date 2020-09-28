@@ -1,7 +1,7 @@
 /* Tutorial 4
  Example 1 JavaScript code
 */
-console.log("Asher's Output from Tutorial 4 Example 1");
+console.log("Baron's Output from Tutorial 4 Example 1");
 
 var number1 = prompt("Enter Number1: ")
 var number2 = prompt("Enter Number 2: ")
