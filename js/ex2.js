@@ -7,10 +7,10 @@ const r = Number(prompt("Enter the circle radius:"));
 
 var circle = {};
 circle.radius = r;
-circle.circumference = function {
+circle.circumference = function() {
     return Math.PI * 2 * this.radius;
 }
-circle.area = function {
+circle.area = function() {
     return Math.PI * this.radius * this.radius;
 }
 
