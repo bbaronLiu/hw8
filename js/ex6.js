@@ -19,8 +19,8 @@ function guesser() {
             console.log("Correct! It took you " + counter + " attempts to guess the correct number");
             z = 1;
         }
-        }
     }
 }
+
 
 guesser()
