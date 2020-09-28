@@ -4,11 +4,11 @@ Example 2 JavaScript code
 console.log("Baron's Output from Tutorial 4 Example 3");
 
 
-const values=[3,11,7,2,9,10];
+const values = [3, 11, 7, 2, 9, 10];
 
 function add() {
-var sum = values.reduce(function(a, b_) {
-    return a + b_;
+var sum = values.reduce(function(a, b ) {
+    return a + b ;
 });
 }
 
