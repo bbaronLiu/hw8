@@ -7,6 +7,8 @@ var x = "stop"
 var z = []
 var counter = 0
 
+
+function words() {
 while (x != "stop") {
     var y = prompt("enter a word: ")
     if (y.toLowerCase() == "stop") {
@@ -23,3 +25,6 @@ while (x != "stop") {
         counter = counter + 1;
     }
 }
+}
+
+words()
