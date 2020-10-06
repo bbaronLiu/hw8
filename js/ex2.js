@@ -3,16 +3,34 @@ Example 2 JavaScript code
 */
 console.log("Baron's Output from Tutorial 4 Example 2");
 
-const r = Number(prompt("Enter the circle radius:"));
+var ten = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-var circle = {};
-circle.radius = r;
-circle.circumference = function() {
-    return Math.PI * 2 * this.radius;
-}
-circle.area = function() {
-    return Math.PI * this.radius * this.radius;
-}
+var oddnumbers = ten.filter(function (i) {
+    return i % 2
+});
 
-console.log(`Its circumference is ${circle.circumference()}`);
-console.log(`Its area is ${circle.area()}`);
+console.log(oddnumbers)
+
+var divtwoandfive = ten.filter(function(i) {
+    return (i % 2 === 0 && i % 5 === 0) 
+});
+
+console.log(divtwoandfive);
+
+var div3 = ten.filter(function(i) {
+    return (i % 3 === 0)
+});
+
+var divs3quared = div3.map(Math.sqrt)
+
+console.log(divs3quared)
+
+var divby5 = ten.filter(function (i) {
+    return  (i % 5 === 0);
+});
+
+var squared5 = divby5.map(Math.sqrt); 
+
+var sumall = divby5.reduce((total, amount) => total + amount);
+
+console.log(sumall)
