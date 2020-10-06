@@ -22,7 +22,7 @@ var div3 = ten.filter(function(i) {
 });
 
 var divs3quared = div3.map(function (i) {
-    return Math.pow(x, 2);
+    return Math.pow(i, 2);
 });
 
 console.log(divs3quared)
