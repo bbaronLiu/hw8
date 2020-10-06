@@ -35,6 +35,7 @@ const studentList = [
         lastName: "Chips",
         scores: [88, 99, 90]
     },
+];
 
 const cStudents = [];
 for (const id of students) {
