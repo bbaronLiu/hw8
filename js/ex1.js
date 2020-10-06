@@ -3,20 +3,20 @@
 */
 console.log("Baron's Output from Tutorial 4 Example 1");
 
-var number1 = Number(prompt("Enter Number1: "))
-var number2 = Number(prompt("Enter Number 2: "))
-var math = prompt("Enter Mathematical Operation")
+class Square {
+    constructor(side) {
+        this.area = Math.pow(side, 2);
+        this.perimeter = side * 4;
+        this.diagonal = Math.sqrt(2) * Math.pow(side, 2)
+        this.describe = Console.log ("Square with side " + side + " has perimeter of " + this.perimeter + ", area of " + this.area + ", and diagonal of " + this.diagonal)
 
-function solve(number1, number2, math) {
-    if (math == "+") {
-        return (number1 += number2);
-    } else if (math == "-") {
-        return (number1 -= number2);
-    } else if (math == "*") {
-        return (number1 *= number2);
-    } else if (math == "/") {
-        return (number1 /= number2);
     }
 }
 
-console.log(solve(number1, number2, math))
+let sq1 = new Square(4);
+let sq2 = new Square(3);
+let sq3 = new Square(2);
+
+console.log(sq1.describe);
+console.log(sq2.describe)
+console.log(sq3.describe)
