@@ -1,7 +1,7 @@
 /* Tutorial 4
- Example 1 JavaScript code
+ Question 1 JavaScript code
 */
-console.log("Baron's Output from Tutorial 4 Example 1");
+console.log("Baron's Output from HW 5 Question 1");
 
 class Square {
     constructor(side) {

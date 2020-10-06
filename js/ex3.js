@@ -1,7 +1,7 @@
 /* Tutorial 4
-Example 2 JavaScript code
+Question 3 JavaScript code
 */
-console.log("Baron's Output from Tutorial 4 Example 3");
+console.log("Baron's Output from HW 5 Question 3");
 
 
 const studentList = [

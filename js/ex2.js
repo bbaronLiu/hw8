@@ -1,7 +1,7 @@
 /* Tutorial 4
-Example 2 JavaScript code
+Question 2 JavaScript code
 */
-console.log("Baron's Output from Tutorial 4 Example 2");
+console.log("Baron's Output from HW 5 Question 2");
 
 var ten = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
