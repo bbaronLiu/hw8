@@ -21,7 +21,9 @@ var div3 = ten.filter(function(i) {
     return (i % 3 === 0)
 });
 
-var divs3quared = div3.map(Math.pow(Number, 2))
+var divs3quared = div3.map(function (i) {
+    return Math.pow(x, 2);
+});
 
 console.log(divs3quared)
 
@@ -29,7 +31,9 @@ var divby5 = ten.filter(function (i) {
     return  (i % 5 === 0);
 });
 
-var squared5 = divby5.map(Math.pow(Number, 2)); 
+var squared5 = divby5.map(function(i) {
+    return Math.pow(i, 2);
+});
 
 var sumall = divby5.reduce((total, amount) => total + amount);
 
