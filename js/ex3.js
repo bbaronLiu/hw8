@@ -49,10 +49,10 @@ for (const id of studentList) {
         var min = score.reduce(function(a, b){
             return Math.min(a, b);
         });
-            for (const grade of id.grades) {
+            for (const grade of id.scores) {
                 gradesSum += grade;
             }
-        const averageGrade = gradesSum / id.grades.length;
+        const averageGrade = gradesSum / id.scores.length;
         cStudents.push({
         firstName: id.firstName,
         lastName: id.lastName,
