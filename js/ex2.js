@@ -11,8 +11,8 @@ var oddnumbers = ten.filter(function (i) {
 
 console.log(oddnumbers)
 
-var divtwoandfive = ten.filter(function(i) {
-    return (i % 2 === 0 && i % 5 === 0) 
+var divtwoorfive = ten.filter(function(i) {
+    return (i % 2 === 0 || i % 5 === 0) 
 });
 
 console.log(divtwoandfive);
@@ -21,7 +21,7 @@ var div3 = ten.filter(function(i) {
     return (i % 3 === 0)
 });
 
-var divs3quared = div3.map(Math.sqrt)
+var divs3quared = div3.map(Math.pow(Number, 2))
 
 console.log(divs3quared)
 
@@ -29,7 +29,7 @@ var divby5 = ten.filter(function (i) {
     return  (i % 5 === 0);
 });
 
-var squared5 = divby5.map(Math.sqrt); 
+var squared5 = divby5.map(Math.pow(Number, 2)); 
 
 var sumall = divby5.reduce((total, amount) => total + amount);
 
