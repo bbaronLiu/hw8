@@ -11,11 +11,11 @@ var oddnumbers = ten.filter(function (i) {
 
 console.log(oddnumbers)
 
-var divtwoorfive = ten.filter(function(i) {
+var divtwoOrFive = ten.filter(function(i) {
     return (i % 2 === 0 || i % 5 === 0) 
 });
 
-console.log(divtwoandfive);
+console.log(divtwoOrFive);
 
 var div3 = ten.filter(function(i) {
     return (i % 3 === 0)
