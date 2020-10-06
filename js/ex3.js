@@ -38,7 +38,7 @@ const studentList = [
 ];
 
 const cStudents = [];
-for (const id of students) {
+for (const id of studentList) {
     var x = id.lastName
      if (x.charAt(0) === "C") {
         let gradesSum = 0;
