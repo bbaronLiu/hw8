@@ -8,7 +8,7 @@ class Square {
         this.area = Math.pow(side, 2);
         this.perimeter = side * 4;
         this.diagonal = Math.sqrt(2) * Math.pow(side, 2)
-        this.describe = Console.log ("Square with side " + side + " has perimeter of " + this.perimeter + ", area of " + this.area + ", and diagonal of " + this.diagonal)
+        this.describe = console.log ("Square with side " + side + " has perimeter of " + this.perimeter + ", area of " + this.area + ", and diagonal of " + this.diagonal)
 
     }
 }
