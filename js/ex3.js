@@ -4,31 +4,64 @@ Example 2 JavaScript code
 console.log("Baron's Output from Tutorial 4 Example 3");
 
 
-const values = [3, 11, 7, 2, 9, 10];
-var x = values;
+const studentList = [
+    {
+        firstName: "Allan",
+        lastName: "Able",
+        scores: [95, 85, 92, 98]
+    },
+    {
+        firstName: "Amy",
+        lastName: "Alexander",
+        scores: [80, 88, 100]
+    },
+    {
+        firstName: "Betty",
+        lastName: "Barns",
+        scores: [70, 80, 90, 100]
+    },
+    {
+        firstName: "Bob",
+        lastName: "Bones",
+        scores: [75, 85, 95, 85]
+    },
+    {
+        firstName: "Cindy",
+        lastName: "Chase",
+        scores: [95, 90, 92, 98]
+    },
+    {
+        firstName: "Charles",
+        lastName: "Chips",
+        scores: [88, 99, 90]
+    },
 
-function add() {
-    var sum = x.reduce(function(a, b ) {
-        return a + b ;
-    });
-    return sum
+const cStudents = [];
+for (const id of students) {
+    var x = id.lastName
+     if (x.charAt(0) === "C") {
+        let gradesSum = 0;
+        var score = id.scores;
+        var max = score.reduce(function(a, b) {
+            return Math.max(a, b);
+        });
+        var min = score.reduce(function(a, b){
+            return Math.min(a, b);
+        });
+            for (const grade of id.grades) {
+                gradesSum += grade;
+            }
+        const averageGrade = gradesSum / id.grades.length;
+        cStudents.push({
+        firstName: id.firstName,
+        lastName: id.lastName,
+        max: max,
+        min: min,
+        avgGrade: averageGrade,
+
+        });
+    }
 }
 
-function biggest() {
-    var max = x.reduce(function(a, b) {
-        return Math.max(a, b)
-    });
-    return max
-}
-
-function smallest() {
-    var min = x.reduce(function(a, b) {
-        return Math.min(a, b)
-    });
-    return min
-}
-
-console.log("The Sum of the Values is " + add());
-console.log("The Max number in the array is " + biggest());
-console.log("The min value in the array is " + smallest());
-
+console.log(cStudents)
+    
