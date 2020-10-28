@@ -35,3 +35,26 @@ const getCharacters = houseCode => {
       return []; // Empty array
   }
 };
+
+var select = document.getElementById("house");
+
+for (var i = 0; i < houses.length; i++) {
+  var opt = houses[i];
+  var el = document.createElement("option");
+  el.textContent = opt.name;
+  el.value = opt.code;
+  select.appendChild(el);
+}
+
+function myFunction() {
+  var x = document.getElementById("house").value;
+  y = getCharacters(x)
+  var str = '<ul>'
+  y.forEach(function(s) {
+    str += '<li>' + s + '</li>';
+  });
+
+  str += '</ul>';
+  document.getElementById("characters").innerHTML = str;
+
+}
