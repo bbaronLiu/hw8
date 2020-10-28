@@ -1,22 +1,37 @@
-/* Tutorial 4
+/* Hw7
  Question 1 JavaScript code
 */
-console.log("Baron's Output from HW 5 Question 1");
+// Character list. Each house has a name and a code
+const houses = [{
+    code: "ST",
+    name: "Stark"
+  },
+  {
+    code: "LA",
+    name: "Lannister"
+  },
+  {
+    code: "BA",
+    name: "Baratheon"
+  },
+  {
+    code: "TA",
+    name: "Targaryen"
+  }
+];
 
-class Square {
-    constructor(side) {
-        this.area = Math.pow(side, 2);
-        this.perimeter = side * 4;
-        this.diagonal = Math.sqrt(2) * Math.pow(side, 2)
-        this.describe = console.log ("Square with side " + side + " has perimeter of " + this.perimeter + ", area of " + this.area + ", and diagonal of " + this.diagonal)
-
-    }
-}
-
-let sq1 = new Square(4);
-let sq2 = new Square(3);
-let sq3 = new Square(2);
-
-console.log(sq1.describe);
-console.log(sq2.describe)
-console.log(sq3.describe)
+// Return an array of characters belonging to a house
+const getCharacters = houseCode => {
+  switch (houseCode) {
+    case "ST":
+      return ["Eddard", "Catelyn", "Robb", "Sansa", "Arya", "Jon Snow"];
+    case "LA":
+      return ["Tywin", "Cersei", "Jaime", "Tyrion"];
+    case "BA":
+      return ["Robert", "Stannis", "Renly"];
+    case "TA":
+      return ["Aerys", "Daenerys", "Viserys"];
+    default:
+      return []; // Empty array
+  }
+};
