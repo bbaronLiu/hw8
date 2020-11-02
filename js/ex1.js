@@ -1,60 +1,40 @@
 /* Hw7
  Question 1 JavaScript code
 */
-// Character list. Each house has a name and a code
-const houses = [{
-    code: "ST",
-    name: "Stark"
-  },
-  {
-    code: "LA",
-    name: "Lannister"
-  },
-  {
-    code: "BA",
-    name: "Baratheon"
-  },
-  {
-    code: "TA",
-    name: "Targaryen"
-  }
+
+var paint = [{
+  "name": "The Starry Night",
+  "year": "1889",
+  "artist": "Vincent Van Gogh"
+},
+{
+  "name": "The Scream",
+  "year": "1893",
+  "artist": "Edvard Munch"
+},
+{
+  "name": "Guernica",
+  "year": "1937",
+  "artist": "Pablo Picasso"
+}
 ];
 
-// Return an array of characters belonging to a house
-const getCharacters = houseCode => {
-  switch (houseCode) {
-    case "ST":
-      return ["Eddard", "Catelyn", "Robb", "Sansa", "Arya", "Jon Snow"];
-    case "LA":
-      return ["Tywin", "Cersei", "Jaime", "Tyrion"];
-    case "BA":
-      return ["Robert", "Stannis", "Renly"];
-    case "TA":
-      return ["Aerys", "Daenerys", "Viserys"];
-    default:
-      return []; // Empty array
-  }
-};
-
-var select = document.getElementById("house");
-
-for (var i = 0; i < houses.length; i++) {
-  var opt = houses[i];
-  var el = document.createElement("option");
-  el.textContent = opt.name;
-  el.value = opt.code;
-  select.appendChild(el);
+function addPainting(nl, data) { // nl -> NodeList, data -> array with objects
+data.forEach((d, i) => {
+var tr = nl.insertRow(i);
+Object.keys(d).forEach((k, j) => { // Keys from object represent th.innerHTML
+var cell = tr.insertCell(j);
+cell.innerHTML = d[k]; // Assign object values to cells   
+});
+nl.appendChild(tr);
+})
 }
 
-function myFunction() {
-  var x = document.getElementById("house").value;
-  y = getCharacters(x)
-  var str = '<ul>'
-  y.forEach(function(s) {
-    str += '<li>' + s + '</li>';
-  });
+var painting = document.querySelector("#painting tbody");
 
-  str += '</ul>';
-  document.getElementById("characters").innerHTML = str;
-
+try {
+  addPainting(painting, paint);
+}
+catch(err) {
+  console.log("Error with code");
 }
