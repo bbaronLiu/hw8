@@ -1,3 +1,3 @@
 /* HW7
-Question 2 JavaScript code
+Question 4 JavaScript code
 */
