@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liu's Question 4</title>
+  </head>
+
+  <body>
+    <h1><a href="../index.html">Link to Start Page</a></h1>
+    <h2>Liu's Question 4</h2>
+    <h3>View console to see JavaScript Output</h3>
+  </body>
+
+
+<h1><b>Information about a GitHub user</b></h1>
+    <form>
+      <p>
+         <label for="name">Name: </label>:
+         <input type="text" name="username" id="username" required>
+      </p>
+      <p>
+         <label for="email">Email: </label>:
+         <input type="text" name="email" id="email" required>
+      </p>
+      <p id = "x">
+         <label for="x">Payment Type: </label>
+         <br>
+         <input type="radio" name="payment" id="cash" value="CASH" checked>
+         <label for="elephant">Cash</label>
+         <br>
+         <input type="radio" name="payment" id="card" value="CARD">
+         <label for="card">Credit Card</label>
+         <br>
+         <input type="radio" name="payment" id="google" value="GOOGLE">
+         <label for="google">Google Pay</label>
+         <br>
+         <input type="radio" name="payment" id="apple" value="APPLE">
+         <label for="apple">Apple Pay</label>
+         <br>
+     </p>
+     <p>
+         <input type="checkbox" id="promotions" name="promotions" value="promotion">
+         <label for="promotions"> Sign me up for special promotions</label><br>
+     </p>
+     <p>
+      <label for="location">Preferred Location: </label>
+      <select name="location" id="location">
+        <option value="Orange County">Orange County</option>
+        <option value="LA County">LA County</option>
+      </select>
+     </p>
+     <input type="submit" value="Submit">
+     <input type="button" value="Cancel" name="cancel">
+    </form>
+
+
+    <script src="ex3.js"></script>
+
+</html>
