@@ -1,4 +1,4 @@
-/* Hw7
+/* Hw8
  Question 1 JavaScript code
 */
 

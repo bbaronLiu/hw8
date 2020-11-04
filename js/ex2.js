@@ -1,4 +1,4 @@
-/* HW7
+/* HW8
 Question 2 JavaScript code
 */
 document.querySelector("form").addEventListener("submit", e => {
